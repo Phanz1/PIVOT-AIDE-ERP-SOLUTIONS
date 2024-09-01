@@ -82,13 +82,15 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     updateStars();
 
     const resizeObserver = new ResizeObserver(updateStars);
-    if (canvasRef.current) {
-      resizeObserver.observe(canvasRef.current);
+    const currentCanvas = canvasRef.current; // Capture current canvas ref
+
+    if (currentCanvas) {
+      resizeObserver.observe(currentCanvas);
     }
 
     return () => {
-      if (canvasRef.current) {
-        resizeObserver.unobserve(canvasRef.current);
+      if (currentCanvas) {
+        resizeObserver.unobserve(currentCanvas);
       }
     };
   }, [
@@ -108,9 +110,10 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     if (!ctx) return;
 
     let animationFrameId: number;
+    const currentCanvas = canvas; // Capture current canvas
 
     const render = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, currentCanvas.width, currentCanvas.height);
       stars.forEach((star) => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);

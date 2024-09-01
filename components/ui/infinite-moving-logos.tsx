@@ -28,39 +28,55 @@ export const InfiniteMovingLogos = ({
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
-      // Duplicate the content for smooth scrolling effect
+      // Duplicate the content for a smooth scrolling effect
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         scrollerRef.current?.appendChild(duplicatedItem);
       });
 
+      // Get the direction and speed, and apply them
+      const getDirection = () => {
+        if (containerRef.current) {
+          if (direction === "left") {
+            containerRef.current.style.setProperty(
+              "--animation-direction",
+              "normal"
+            );
+          } else {
+            containerRef.current.style.setProperty(
+              "--animation-direction",
+              "reverse"
+            );
+          }
+        }
+      };
+
+      const getSpeed = () => {
+        if (containerRef.current) {
+          if (speed === "fast") {
+            containerRef.current.style.setProperty(
+              "--animation-duration",
+              "20s"
+            );
+          } else if (speed === "normal") {
+            containerRef.current.style.setProperty(
+              "--animation-duration",
+              "40s"
+            );
+          } else {
+            containerRef.current.style.setProperty(
+              "--animation-duration",
+              "100s"
+            );
+          }
+        }
+      };
+
       getDirection();
       getSpeed();
       setStart(true);
     }
-  }, [direction, speed]);
-
-  const getDirection = () => {
-    if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty("--animation-direction", "normal");
-      } else {
-        containerRef.current.style.setProperty("--animation-direction", "reverse");
-      }
-    }
-  };
-
-  const getSpeed = () => {
-    if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "100s");
-      }
-    }
-  };
+  }, [direction, speed]); // No need to include the functions in dependencies
 
   return (
     <div
@@ -82,7 +98,8 @@ export const InfiniteMovingLogos = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
         style={{
-          animation: "scroll var(--animation-duration) linear infinite var(--animation-direction)",
+          animation:
+            "scroll var(--animation-duration) linear infinite var(--animation-direction)",
         }}
       >
         {items.map((item, idx) => (

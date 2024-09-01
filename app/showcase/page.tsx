@@ -148,11 +148,14 @@ const Showcase = () => {
 
       {/* Image on the Right */}
       <div className="md:w-1/3">
-        <img 
-          src="/images/1.jpg" 
-          alt="Descriptive alt text" 
-          className="w-full h-63 h-auto object-cover"
-        />
+      <Image 
+  src="/images/1.jpg" 
+  alt="Descriptive alt text" 
+  width={500}  // Provide a width
+  height={300} // Provide a height
+  className="w-full h-auto object-cover"
+/>
+
       </div>
     </div>
   </div>

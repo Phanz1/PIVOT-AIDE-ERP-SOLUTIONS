@@ -43,19 +43,19 @@ const newWorks: Work[] = [
     background: "bg-red-200",
     imageUrl: "/images/new-image2.png",
     title: "Expertise and Experience:",
-    description: "With over a decade of experience in ERP implementation, we’ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
+    description: "With over a decade of experience in ERP implementation, we&apos;ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
   },
   {
     background: "bg-red-500",
     imageUrl: "/images/new-image2.png",
     title: "Expertise and Experience:",
-    description: "With over a decade of experience in ERP implementation, we’ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
+    description: "With over a decade of experience in ERP implementation, we&apos;ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
   },
   {
     background: "bg-green-200",
     imageUrl: "/images/new-image2.png",
     title: "Expertise and Experience:",
-    description: "With over a decade of experience in ERP implementation, we’ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
+    description: "With over a decade of experience in ERP implementation, we&apos;ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
   },
   {
     background: "bg-gray-200",
@@ -67,7 +67,7 @@ const newWorks: Work[] = [
     background: "bg-red-200",
     imageUrl: "/images/new-image2.png",
     title: "Expertise and Experience:",
-    description: "With over a decade of experience in ERP implementation, we’ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
+    description: "With over a decade of experience in ERP implementation, we&apos;ve helped numerous businesses across various industries achieve their growth goals. For instance, a manufacturing company was able to improve production efficiency by 30% after our team optimized their operations with a tailored specialized ERP setup",
   },
   // Add more items as needed
 ];
@@ -428,7 +428,7 @@ export default function ClientHome() {
             <WordPullUpDemo /></h1>
 
           <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-          At Pivot Aide Consulting, we don't just provide software; we deliver powerful, custom-tailored Odoo ERP solutions that are crafted to elevate your business. As a trusted partner, we work closely with you to design and implement systems that align perfectly with your industry’s needs, transforming your operations for peak efficiency and accelerated growth. Discover how our innovative solutions can unlock new potential and drive your business forward in today’s dynamic marketplace. We also offer a wide range of services including branding and marketing, tax and accounting and business formation. Explore our services below to see how we can help your business thrive 
+          At Pivot Aide Consulting, we don&apos;t just provide software; we deliver powerful, custom-tailored Odoo ERP solutions that are crafted to elevate your business. As a trusted partner, we work closely with you to design and implement systems that align perfectly with your industry&apos;s needs, transforming your operations for peak efficiency and accelerated growth. Discover how our innovative solutions can unlock new potential and drive your business forward in today&apos;s dynamic marketplace. We also offer a wide range of services including branding and marketing, tax and accounting and business formation. Explore our services below to see how we can help your business thrive 
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
@@ -591,7 +591,7 @@ export default function ClientHome() {
           />
           <div className="flex flex-col gap-y-5 md:w-1/2">
             <h1 className="text-lg md:text-2xl ">
-              &quot;Working with Pivot Aide Consulting was a game-changer for us. Their tailored Odoo ERP implementation has optimized our workflow, saving us both time and money. The team is incredibly professional and responsive, making the entire process smooth and stress-free. We couldn’t be happier with the results!&quot;
+              &quot;Working with Pivot Aide Consulting was a game-changer for us. Their tailored Odoo ERP implementation has optimized our workflow, saving us both time and money. The team is incredibly professional and responsive, making the entire process smooth and stress-free. We couldn&apos;t be happier with the results!&quot;
             </h1>
             <div className="flex items-center gap-x-1">
               <IconStarFilled className="text-4xl text-yellow-500" />

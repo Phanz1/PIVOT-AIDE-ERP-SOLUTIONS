@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -45,11 +45,15 @@ export const StickyScroll = ({
     "var(--black)",
     "var(--neutral-900)",
   ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-  ];
+  
+  const linearGradients = useMemo(
+    () => [
+      "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
+      "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
+      "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
+    ],
+    []
+  );
 
   const [backgroundGradient, setBackgroundGradient] = useState(
     linearGradients[0]
@@ -57,7 +61,7 @@ export const StickyScroll = ({
 
   useEffect(() => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  }, [activeCard]);
+  }, [activeCard, linearGradients]);
 
   return (
     <motion.div
@@ -70,7 +74,10 @@ export const StickyScroll = ({
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20 p-4 bg-black bg-opacity-50 rounded">
+            <div
+              key={item.title + index}
+              className="my-20 p-4 bg-black bg-opacity-50 rounded"
+            >
               <motion.h2
                 initial={{
                   opacity: 0,

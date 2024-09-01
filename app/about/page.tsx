@@ -35,7 +35,7 @@ const AboutUs = () => {
         
       />
   <p className="py-4 text-xl text-center text-gray-500 md:text-2xl md:w-1/2">
-    At Pivot Aide Consulting, we don't just provide software; we deliver powerful, custom-tailored Odoo ERP solutions that are crafted to elevate your business. As a trusted partner, we work closely with you to design and implement systems that align perfectly with your industry’s needs, transforming your operations for peak efficiency and accelerated growth. Discover how our innovative solutions can unlock new potential and drive your business forward in today’s dynamic marketplace. We also offer a wide range of services including branding and marketing, tax and accounting, and business formation. Explore our services below to see how we can help your business thrive.
+    At Pivot Aide Consulting, we don&apos;t just provide software; we deliver powerful, custom-tailored Odoo ERP solutions that are crafted to elevate your business. As a trusted partner, we work closely with you to design and implement systems that align perfectly with your industry&apos;s needs, transforming your operations for peak efficiency and accelerated growth. Discover how our innovative solutions can unlock new potential and drive your business forward in today&apos;s dynamic marketplace. We also offer a wide range of services including branding and marketing, tax and accounting, and business formation. Explore our services below to see how we can help your business thrive.
   </p>
   <br/>
   <p className="py-4 text-xl text-center text-gray-500 md:text-2xl md:w-1/2">
@@ -43,7 +43,7 @@ const AboutUs = () => {
   </p>
   <br/>
   <p className="py-4 text-xl text-center text-gray-500 md:text-2xl md:w-1/2">
-  We proudly serve businesses in the DC, Maryland, and Northern Virginia area, offering tailored solutions that are vital to propelling your business forward. Whether you're a start-up looking to establish a strong foundation or an established business aiming to optimize operations, our personalized approach ensures you maximize your potential and stay ahead of the competition. Partner with us today, and equip your business with the essential tools it needs to thrive. 
+  We proudly serve businesses in the DC, Maryland, and Northern Virginia area, offering tailored solutions that are vital to propelling your business forward. Whether you&apos;re a start-up looking to establish a strong foundation or an established business aiming to optimize operations, our personalized approach ensures you maximize your potential and stay ahead of the competition. Partner with us today, and equip your business with the essential tools it needs to thrive. 
   </p>
 </div>
 
@@ -52,7 +52,7 @@ const AboutUs = () => {
 <TypingAnimation text={"An Ode from Our COO"}/>
 <p className="py-4 text-xl text-center text-gray-500 md:text-2xl md:w-1/2">
 Dear Valued Clients and Partners,<br/>
-At Pivot Aide Consulting, our journey is guided by a relentless pursuit of excellence, a passion for innovation, and a commitment to your success. As I reflect on the path we've walked together and the road that lies ahead, I am filled with a profound sense of purpose and optimism.
+At Pivot Aide Consulting, our journey is guided by a relentless pursuit of excellence, a passion for innovation, and a commitment to your success. As I reflect on the path we&apos;ve walked together and the road that lies ahead, I am filled with a profound sense of purpose and optimism.
  
   </p>
 
@@ -95,8 +95,8 @@ In the complexity of the modern business world, we find our strength in simplici
           A Mantra for Success
           </h3>
             <h1 className="text-lg md:text-2xl ">
-              &quot;When faced with challenges, we invoke the four A's: Acknowledge, Accept, Act, and Attack. This mantra is our guiding light, helping us to confront obstacles head-on and turn them into stepping stones for success. We are not on this path for applause, but for the satisfaction of knowing that we have made a difference.
-As we continue this journey together, I am reminded of the words of a great poet: "The future belongs to those who believe in the beauty of their dreams." At Pivot Aide Consulting, we believe in your dreams, and we are here to help you achieve them.
+              &quot;When faced with challenges, we invoke the four A&apos;s: Acknowledge, Accept, Act, and Attack. This mantra is our guiding light, helping us to confront obstacles head-on and turn them into stepping stones for success. We are not on this path for applause, but for the satisfaction of knowing that we have made a difference.
+As we continue this journey together, I am reminded of the words of a great poet: &quot;The future belongs to those who believe in the beauty of their dreams.&quot; At Pivot Aide Consulting, we believe in your dreams, and we are here to help you achieve them.
 Thank you for entrusting us with your vision. Together, we will navigate the tides of change, build confidence through preparation, and achieve clarity through simplicity.
 With heartfelt gratitude
  &quot;

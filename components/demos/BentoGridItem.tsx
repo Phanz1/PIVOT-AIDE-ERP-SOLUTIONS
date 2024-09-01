@@ -1,7 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-export function BentoGridItem({ title, description, header, icon, className }) {
+interface BentoGridItemProps {
+  title: string;
+  description: string;
+  header?: ReactNode;
+  icon?: ReactNode;
+  className?: string;
+}
+
+export function BentoGridItem({
+  title,
+  description,
+  header,
+  icon,
+  className,
+}: BentoGridItemProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {

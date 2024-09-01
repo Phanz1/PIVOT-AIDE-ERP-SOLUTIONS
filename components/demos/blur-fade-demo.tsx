@@ -1,5 +1,6 @@
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
+import Image from 'next/image';
 
 type Work = {
   background: string;
@@ -15,11 +16,14 @@ export function BlurFadeDemo({ works }: { works: Work[] }) {
         {works.map((work, idx) => (
           <BlurFade key={work.imageUrl} delay={0.25 + idx * 0.05} inView>
             <div className={`${work.background} rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl`}>
-              <img
-                className="w-full h-64 object-cover"
-                src={work.imageUrl}
-                alt={work.title}
-              />
+            <Image
+        className="w-full h-64 object-cover"
+        src={work.imageUrl}
+        alt={work.title}
+        layout="responsive"  // Automatically calculates width and height
+        width={500}          // You can specify actual values or adjust as needed
+        height={256}         // Corresponding to your h-64 class (256px)
+      />
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-4">{work.title}</h2>
                 <a 

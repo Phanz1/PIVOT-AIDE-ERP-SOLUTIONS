@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
                 To Provide Services: We use your personal information to respond to your inquiries, process your requests, and provide you with our services.
               </li>
               <li>
-                To Improve Our Website: We analyze usage data to improve our website's performance, functionality, and user experience.
+                To Improve Our Website: We analyze usage data to improve our website&apos;s performance, functionality, and user experience.
               </li>
               <li>
                 To Communicate with You: We may use your contact information to send you updates, newsletters, and marketing communications. You can opt-out of these communications at any time.

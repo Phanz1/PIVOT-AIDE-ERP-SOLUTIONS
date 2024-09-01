@@ -18,7 +18,7 @@ const TermsAndConditions = () => {
           <section>
             <h2 className="text-2xl font-semibold">1. Introduction</h2>
             <p className="mt-2">
-              These Terms and Conditions govern the provision of services by Pivot Aide Consulting ("Company", "we", "us", or "our") to the client ("Client", "you", or "your"). By engaging our services, you agree to be bound by these Terms and Conditions.
+              These Terms and Conditions govern the provision of services by Pivot Aide Consulting (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) to the client (&quot;Client&quot;, &quot;you&quot;, or &quot;your&quot;). By engaging our services, you agree to be bound by these Terms and Conditions.
             </p>
           </section>
 
@@ -89,7 +89,7 @@ const TermsAndConditions = () => {
             <h2 className="text-2xl font-semibold">10. Warranty and Disclaimer</h2>
             <ul className="list-disc pl-5 mt-2">
               <li>Warranty: We warrant that our services will be performed in a professional manner. We do not guarantee specific results or that the work will be error-free.</li>
-              <li>Disclaimer: Except as expressly provided in these Terms and Conditions, our services are provided "as is" without any other warranties or conditions, express or implied.</li>
+              <li>Disclaimer: Except as expressly provided in these Terms and Conditions, our services are provided &quot;as is&quot; without any other warranties or conditions, express or implied.</li>
             </ul>
           </section>
 
