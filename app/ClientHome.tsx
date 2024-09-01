@@ -188,53 +188,69 @@ export default function ClientHome() {
           >
             Book a call
           </Link>
+          {/* Menu Icon for smaller screens */}
+          <button className="md:hidden" onClick={toggleMenu}>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </DynamicElement>
 
-       {/* Side Navbar Overlay */}
-       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden" onClick={toggleMenu}>
-          <div ref={sideNavRef} className="fixed top-0 left-0 w-64 h-full bg-white shadow-md p-6 z-50" onClick={(e) => e.stopPropagation()}>
-            <button
-              className="text-gray-700 focus:outline-none absolute top-4 right-4"
-              onClick={toggleMenu}
+      
+      {/* Side Navbar */}
+      <div
+        ref={sideNavRef}
+        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out z-50`}
+      >
+        <div className="p-5">
+          <button onClick={toggleMenu} className="mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div className="flex flex-col gap-y-4">
+            <Link href={"/about"} className="hover:text-blue-500">
+              About us
+            </Link>
+            <Link href={"/showcase"} className="hover:text-blue-500">
+              PIVOT AIDE ERP SOLUTION.
+            </Link>
+            <DynamicScrollLink
+              to='services'
+              smooth={true}
+              className="hover:text-blue-500"
+            >
+              Services
+            </DynamicScrollLink>
 
-            <nav className="mt-16 flex flex-col space-y-4">
-              <Link href="/about" className="hover:text-blue-500">
-                About us
-              </Link>
-              <Link href="/showcase" className="hover:text-blue-500">
-                PIVOT AIDE ERP SOLUTION.
-              </Link>
-              <Link href="/#services" className="hover:text-blue-500">
-                Services
-              </Link>
-              <Link href="/#guarantees" className="hover:text-blue-500">
-                Guarantees
-              </Link>
-              <Link href="/meeting" className="hover:text-blue-500">
-                Book a call
-              </Link>
-            </nav>
+            <DynamicScrollLink
+              to='guarantees'
+              smooth={true}
+              className="hover:text-blue-500"
+            >
+              Guarantees
+            </DynamicScrollLink>
+            
+            <a href="tel:5193191562" className="hover:text-blue-500">
+              (519)-319-1562
+            </a>
           </div>
         </div>
-      )}
+      </div>
 
 
       <main className="md:pb-10">
