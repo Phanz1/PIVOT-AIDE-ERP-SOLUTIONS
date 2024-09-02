@@ -102,8 +102,8 @@ export const InfiniteMovingLogos = ({
               <Image
                 src={item.logo}
                 alt={item.name}
-                width={500}
-                height={500}
+                width={160}
+                height={50}
                 className="
                 w-40
                 md:w-60
