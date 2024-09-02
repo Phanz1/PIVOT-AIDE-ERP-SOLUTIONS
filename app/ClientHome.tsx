@@ -125,7 +125,7 @@ export default function ClientHome() {
       >
         <Link href={"/"}>
           <Image
-            src={'/Logo/logo.PNG'}
+            src={'/logo/logo.PNG'}
             alt="logo"
             width={1000}
             height={1000}
