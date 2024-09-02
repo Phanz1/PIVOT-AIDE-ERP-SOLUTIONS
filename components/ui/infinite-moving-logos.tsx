@@ -22,89 +22,76 @@ export const InfiniteMovingLogos = ({
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
-  const [start, setStart] = useState(false);
 
   useEffect(() => {
+    addAnimation();
+  });
+  const [start, setStart] = useState(false);
+  function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
-      // Duplicate the content for a smooth scrolling effect
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
-        scrollerRef.current?.appendChild(duplicatedItem);
+        if (scrollerRef.current) {
+          scrollerRef.current.appendChild(duplicatedItem);
+        }
       });
-
-      // Get the direction and speed, and apply them
-      const getDirection = () => {
-        if (containerRef.current) {
-          if (direction === "left") {
-            containerRef.current.style.setProperty(
-              "--animation-direction",
-              "normal"
-            );
-          } else {
-            containerRef.current.style.setProperty(
-              "--animation-direction",
-              "reverse"
-            );
-          }
-        }
-      };
-
-      const getSpeed = () => {
-        if (containerRef.current) {
-          if (speed === "fast") {
-            containerRef.current.style.setProperty(
-              "--animation-duration",
-              "20s"
-            );
-          } else if (speed === "normal") {
-            containerRef.current.style.setProperty(
-              "--animation-duration",
-              "40s"
-            );
-          } else {
-            containerRef.current.style.setProperty(
-              "--animation-duration",
-              "100s"
-            );
-          }
-        }
-      };
 
       getDirection();
       getSpeed();
       setStart(true);
     }
-  }, [direction, speed]); // No need to include the functions in dependencies
-
+  }
+  const getDirection = () => {
+    if (containerRef.current) {
+      if (direction === "left") {
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "forwards"
+        );
+      } else {
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "reverse"
+        );
+      }
+    }
+  };
+  const getSpeed = () => {
+    if (containerRef.current) {
+      if (speed === "fast") {
+        containerRef.current.style.setProperty("--animation-duration", "20s");
+      } else if (speed === "normal") {
+        containerRef.current.style.setProperty("--animation-duration", "40s");
+      } else {
+        containerRef.current.style.setProperty("--animation-duration", "100s");
+      }
+    }
+  };
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 w-full overflow-hidden",
+        "scroller relative z-20  w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
         className
       )}
-      style={{
-        "--animation-duration": "100s",
-        "--animation-direction": "normal",
-      } as React.CSSProperties}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
+          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
-        style={{
-          animation:
-            "scroll var(--animation-duration) linear infinite var(--animation-direction)",
-        }}
       >
         {items.map((item, idx) => (
           <li
-            className="flex items-center flex-shrink-0 px-8"
+            className="
+        
+              flex items-center
+              
+              flex-shrink-00 px-8 "
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -115,9 +102,12 @@ export const InfiniteMovingLogos = ({
               <Image
                 src={item.logo}
                 alt={item.name}
-                width={10000}
-                height={10000}
-                className="w-40 md:w-60"
+                width={500}
+                height={500}
+                className="
+                w-40
+                md:w-60
+                 "
               />
             </div>
           </li>

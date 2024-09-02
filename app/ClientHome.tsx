@@ -125,7 +125,7 @@ export default function ClientHome() {
       >
         <Link href={"/"}>
           <Image
-            src={'/logo/logo.PNG'}
+            src={'/Logo/logo.PNG'}
             alt="logo"
             width={1000}
             height={1000}
@@ -133,69 +133,51 @@ export default function ClientHome() {
           />
         </Link>
 
-        {/* Menu icon for small screens */}
-        <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu}>
-            <svg
-              className="w-8 h-8 text-gray-700"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
+  <div className="absolute right-1/2 translate-x-1/2 transform">
+    <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
+      <Link href={"/about"} className="hover:text-blue-500">
+        About us
+      </Link>
 
-        <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/about"} className="hover:text-blue-500">
-              About us
-            </Link>
+      <Link href={"/showcase"} className="hover:text-blue-500">
+        PIVOT AIDE ERP SOLUTION.
+      </Link>
 
-            <Link href={"/showcase"} className="hover:text-blue-500">
-              PIVOT AIDE ERP SOLUTION.
-            </Link>
+      <DynamicScrollLink
+        to='services'
+        smooth={true}
+        className="hover:text-blue-500"
+      >
+        Services
+      </DynamicScrollLink>
 
-            <DynamicScrollLink
-              to='services'
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Services
-            </DynamicScrollLink>
+      <DynamicScrollLink
+        to='guarantees'
+        smooth={true}
+        className="hover:text-blue-500"
+      >
+        Guarantees
+      </DynamicScrollLink>
+    </div>
+  </div>
 
-            <DynamicScrollLink
-              to='guarantees'
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Guarantees
-            </DynamicScrollLink>
-          </div>
-        </div>
+  <div className="flex items-center gap-x-4">
+    
+    <Link 
+      href={"/meeting"}
+      className="py-3 px-6 text-lg hover:bg-[#abcbff] rounded-[6px] border-2 border-black text-white bg-[#121212] transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
+    >
+      Book a call
+    </Link>
+    {/* Menu Icon for smaller screens */}
+    <button className="md:hidden" onClick={toggleMenu}>
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</DynamicElement>
 
-        <div className="flex items-center gap-x-4">
-          <a href="tel:+15714703754" className="hidden xl:flex">
-            <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
-              +1 (571) 470-3754
-            </button>
-          </a>
-          <Link 
-            href={"/meeting"}
-            className="py-3 px-6 text-lg hover:bg-[#abcbff] rounded-[6px] border-2 border-black text-white bg-[#121212] transition duration-200 hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
-          >
-            Book a call
-          </Link>
-          {/* Menu Icon for smaller screens */}
-          <button className="md:hidden" onClick={toggleMenu}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </DynamicElement>
 
       
       {/* Side Navbar */}
@@ -439,8 +421,8 @@ export default function ClientHome() {
               >
                 <Image
                   src={service.icon}
-                  width={10000}
-                  height={10000}
+                  width={500}
+                  height={500}
                   className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
                   alt="image"
                 />
@@ -467,16 +449,16 @@ export default function ClientHome() {
               {" "}
               <Image
                 src={"/icons/a_4.jpeg"}
-                width={10000}
-                height={10000}
+                width={500}
+                height={500}
                 className="w-6"
                 alt="image"
               />
               Creative
               <Image
                 src={"/icons/star.PNG"}
-                width={10000}
-                height={10000}
+                width={500}
+                height={500}
                 className="w-6 mb-8"
                 alt="image"
               />
@@ -527,8 +509,8 @@ export default function ClientHome() {
           
           <Image
             src={"/logo/l_11.PNG"}
-            width={10000}
-            height={10000}
+            width={500}
+            height={500}
             className=" md:w-1/3 rounded-md"
             alt="image"
           />
@@ -555,8 +537,8 @@ export default function ClientHome() {
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
             src={"/logo/l_12.PNG"}
-            width={10000}
-            height={10000}
+            width={500}
+            height={500}
             className=" md:w-1/3 rounded-md"
             alt="image"
           />
@@ -584,8 +566,8 @@ export default function ClientHome() {
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
             src={"/logo/l_1.PNG"}
-            width={10000}
-            height={10000}
+            width={500}
+            height={500}
             className=" md:w-1/3 rounded-md"
             alt="image"
           />
