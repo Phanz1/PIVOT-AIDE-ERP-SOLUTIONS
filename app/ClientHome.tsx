@@ -127,8 +127,8 @@ export default function ClientHome() {
           <Image
             src={'/Logo/logo.PNG'}
             alt="logo"
-            width={1000}
-            height={1000}
+            width={160}
+            height={50}
             className="w-28"
           />
         </Link>
@@ -421,8 +421,8 @@ export default function ClientHome() {
               >
                 <Image
                   src={service.icon}
-                  width={500}
-                  height={500}
+                  width={160}
+                  height={50}
                   className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
                   alt="image"
                 />
@@ -449,16 +449,16 @@ export default function ClientHome() {
               {" "}
               <Image
                 src={"/icons/a_4.jpeg"}
-                width={500}
-                height={500}
+                width={160}
+                height={50}
                 className="w-6"
                 alt="image"
               />
               Creative
               <Image
                 src={"/icons/star.PNG"}
-                width={500}
-                height={500}
+                width={160}
+                height={50}
                 className="w-6 mb-8"
                 alt="image"
               />

@@ -58,9 +58,9 @@ export function AnimatedBeamMultipleOutputDemo({
           </Circle>
           <Circle ref={div3Ref}>
           <Image
-              src={"/logo/f1.jpeg"}
-              width={10000}
-              height={10000}
+              src={"/logo/f2.png"}
+              width={160}
+              height={50}
               className="w-6 h-6"
               alt="image"
             />
@@ -76,8 +76,8 @@ export function AnimatedBeamMultipleOutputDemo({
           <Circle ref={div6Ref} className="size-16 bg-white">
           <Image
           src={'/logo/logo.PNG'}
-          height={1000}
-          width={1000}
+          height={160}
+          width={50}
           alt="logo"
           />
           </Circle>
@@ -126,8 +126,8 @@ export function AnimatedBeamMultipleOutputDemo({
 const Icons = {
   notion: () => (
     <svg
-      width="100"
-      height="100"
+      width="160"
+      height="50"
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
