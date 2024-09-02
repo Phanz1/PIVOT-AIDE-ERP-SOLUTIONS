@@ -125,7 +125,7 @@ export default function ClientHome() {
       >
         <Link href={"/"}>
           <Image
-            src={'/Logo/logo.PNG'}
+            src={'/logo/logo.png'}
             alt="logo"
             width={160}
             height={50}
@@ -456,7 +456,7 @@ export default function ClientHome() {
               />
               Creative
               <Image
-                src={"/icons/star.PNG"}
+                src={"/icons/star.png"}
                 width={160}
                 height={50}
                 className="w-6 mb-8"
