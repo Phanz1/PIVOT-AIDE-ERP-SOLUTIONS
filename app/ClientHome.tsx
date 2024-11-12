@@ -459,6 +459,7 @@ export default function ClientHome() {
 </main>
 
 
+      <section className="bg-gradient-to-br from-green-500 via-blue-700 to-purple-600 bg-opacity-70">
       <DynamicElement name="">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
           <h1 >
@@ -487,6 +488,7 @@ export default function ClientHome() {
           
           </div>
           </DynamicElement>
+          </section>
 
           <section className="py-20">
             <ScrollBasedVelocityDemo/>

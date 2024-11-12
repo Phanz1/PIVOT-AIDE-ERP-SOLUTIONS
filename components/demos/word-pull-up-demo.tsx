@@ -5,7 +5,7 @@ export function WordPullUpDemo() {
     "What We Do:"];
 
   return (
-    <div className="text-3xl text-blue-500 md:text-5xl md:text-center font-medium">
+    <div className="text-3xl text-white md:text-5xl md:text-center font-medium">
       {services.map((service, index) => (
         <WordPullUp key={index} words={service} />
       ))}
