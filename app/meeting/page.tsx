@@ -22,14 +22,14 @@ const checkItemVariants = {
 // Main Component
 const Meeting = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const sideNavRef = useRef(null);
+  const sideNavRef = useRef<HTMLDivElement | null>(null);
 
   // Toggle Side Menu
   const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
   // Close menu if clicking outside
-  const closeMenuOnOutsideClick = useCallback((e) => {
-    if (sideNavRef.current && !sideNavRef.current.contains(e.target)) {
+  const closeMenuOnOutsideClick = useCallback((e: MouseEvent) => {
+    if (sideNavRef.current && !sideNavRef.current.contains(e.target as Node)) {
       setIsMenuOpen(false);
     }
   }, []);
