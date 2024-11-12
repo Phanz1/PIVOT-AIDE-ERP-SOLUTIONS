@@ -114,17 +114,17 @@ const sectionsData = [
     {
       title: 'Client-Focused',
       description: 'We listen to your needs and tailor our services to ensure the best outcomes for your financial situation',
-      imageUrl: '/Images/gt2.jpeg',
+      imageUrl: '/images/gt2.jpeg',
     },
     {
       title: 'Proactive Solutions',
       description: 'Beyond tax filing, we offer strategic advice to reduce liabilities and help your business grow.',
-      imageUrl: '/Images/gt5.jpeg',
+      imageUrl: '/images/gt5.jpeg',
     },
     {
       title: 'Ethical & Transparent',
       description: 'No hidden fees, just honest pricing and ethical practices.',
-      imageUrl: '/Images/x1.jpeg',
+      imageUrl: '/images/x1.jpeg',
     },
 ];
 
@@ -240,18 +240,18 @@ const products = [
 
 const slides = [
   {
-    imageUrl: "/Images/xx5.jpeg",
+    imageUrl: "/images/xx5.jpeg",
     dear: "Accurate & Efficient Bookkeeping for Your Business",
     description:
       "Running a business means you’ve got a lot on your plate, and keeping your books in order is a big part of that. At DMV Tax Pro, we offer professional bookkeeping and accounting services designed to keep your business finances organized and compliant.",
   },
   {
-    imageUrl: "/Images/xx6.jpeg",
+    imageUrl: "/images/xx6.jpeg",
     dear: "Accurate & Efficient Bookkeeping for Your Business",
     description: "Running a business means you’ve got a lot on your plate, and keeping your books in order is a big part of that. At DMV Tax Pro, we offer professional bookkeeping and accounting services designed to keep your business finances organized and compliant.",
   },
   {
-    imageUrl: "/Images/xx9.jpeg",
+    imageUrl: "/images/xx9.jpeg",
     dear: "Accurate & Efficient Bookkeeping for Your Business",
     description: "Running a business means you’ve got a lot on your plate, and keeping your books in order is a big part of that. At DMV Tax Pro, we offer professional bookkeeping and accounting services designed to keep your business finances organized and compliant.",
   },
@@ -606,7 +606,7 @@ export default function ClientHome() {
 
 
                 <HeroSection
-                    backgroundImageUrl="/Images/12.png"
+                    backgroundImageUrl="/images/12.png"
                     headerText="Expert Tax Guidance, Every Step of the Way"
                     descriptionText="At DMV Tax Pro, we are more than just accountants and tax preparers. We are your financial partners, helping you navigate tax laws, manage business finances, and achieve financial success."
                     additionalText="With years of experience, our certified team of tax professionals understands the unique financial landscape of the DMV area."
@@ -649,7 +649,7 @@ export default function ClientHome() {
             </p>
           </div>
           <Image
-            src="/Images/xx0.jpeg"
+            src="/images/xx0.jpeg"
             width={500}
             height={500}
             alt="linear demo image"
@@ -755,7 +755,7 @@ export default function ClientHome() {
 </div>
 
       <HeroSection
-                    backgroundImageUrl="/Images/12.png"
+                    backgroundImageUrl="/images/12.png"
                     headerText="Don’t Let IRS Problems Stress You Out"
                     descriptionText="At DMV Tax Pro, we specialize in helping clients resolve complex tax issues. From tax audits to payment plans, we take the stress out of dealing with the IRS by representing you every step of the way."
                     additionalText=""

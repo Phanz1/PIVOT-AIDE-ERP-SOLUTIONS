@@ -1,17 +1,13 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import { Element, Link as ScrollLink } from "react-scroll";
 import Calendly from "./calendly";
 import Footer from "@/components/footer";
 import { PiCheckCircle } from "react-icons/pi";
 import { motion } from "framer-motion";
-
-// Dynamic Imports
-const DynamicElement = dynamic(() => import("react-scroll").then(mod => mod.Element), { ssr: false });
-const DynamicScrollLink = dynamic(() => import("react-scroll").then(mod => mod.Link), { ssr: false });
 
 // Animation Variants
 const checkItemVariants = {
@@ -44,7 +40,7 @@ const Meeting = () => {
   return (
     <div className="flex flex-col w-full overflow-clip inset-0 bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
       {/* Top Navigation */}
-      <DynamicElement
+      <Element
         name="top"
         className="sticky top-5 z-50 md:mx-auto xl:w-4/5 2xl:w-[68%] bg-white flex items-center justify-between py-6 px-4 md:px-8 mx-6 rounded-[6px] bg-opacity-50"
       >
@@ -73,7 +69,7 @@ const Meeting = () => {
             </svg>
           </button>
         </div>
-      </DynamicElement>
+      </Element>
 
       {/* Side Navigation */}
       {isMenuOpen && (
