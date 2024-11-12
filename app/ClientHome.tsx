@@ -535,7 +535,7 @@ export default function ClientHome() {
             </main>
           </DynamicElement>
 
-          <section  className="py-20 bg-blue-500">
+          <section  className="py-20 bg-gradient-to-br from-blue-500 via-green-700 to-green-600 bg-opacity-70">
 
           
 
