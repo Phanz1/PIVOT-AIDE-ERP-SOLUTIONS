@@ -101,7 +101,7 @@ const Meeting = () => {
       {/* Main Content */}
       <main className="md:px-0 px-6 xl:w-4/5 2xl:w-[68%] md:mt-14 md:flex mx-auto">
         <section className="md:w-2/5">
-          <h1 className="text-4xl font-semibold pt-10">Let's Meet</h1>
+          <h1 className="text-4xl font-semibold pt-10">Let&apos;s Meet</h1>
           <p className="text-lg text-gray-500 py-4">
             We are always excited to meet new people and discuss new projects. Please feel free to book a meeting with us.
           </p>

@@ -60,7 +60,7 @@ const TestimonialComponent = () => {
                 ))}
               </div>
             </div>
-            <p className="text-gray-700 italic">"{review.message}"</p>
+            <p className="text-gray-700 italic">&quot;{review.message}&quot;</p>
           </div>
         ))}
       </div>
