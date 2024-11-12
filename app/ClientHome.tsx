@@ -679,7 +679,7 @@ export default function ClientHome() {
             </p>
           </div>
           <Image
-            src="/Images/xx3.jpeg"
+            src="/images/xx3.jpeg"
             width={500}
             height={500}
             alt="linear demo image"
