@@ -5,65 +5,36 @@ import Image from "next/image";
 
 const features = [
   {
-    icon: "/icons/fast.svg",
-    title: "Fast Delivery",
-    description:
-      "Within weeks delivery for most projects. Call us for more information.",
-  },
-  {
-    icon: "/icons/Design & Development.svg",
-    title: "Design & Development",
-    description:
-      "We design and develop your Logo, Brand Design, Websites, mobile Apps, Digital Design / Print Design with the latest technologies and trends.",
-  },
-  {
-    icon: "/icons/tax.svg",
-    title: "Tax & Accounting ",
-    description: "Personal Tax Filing, Business Tax Filing, Tax Consultancy, Bookkeeping, Payroll Services",
-  },
-  {
-    icon: "/icons/team.svg",
-    title: "Team of Experts",
-    description: "A team of experts ready to help you, at all times.",
-  },
-  {
-    icon: "/icons/safe.svg",
-    title: "Business Solutions",
-    description:
-      "Odoo ERP Implementation .",
-  },
-  {
     icon: "/icons/analytics.svg",
-    title: "Analytics Tracking",
-    description: "Track your progress with our built in analytics",
-  },
-
-  {
-    icon: "/icons/flexible.svg",
-    title: "Business Formation",
-    description: "LLC Registration, Corporation Registration, Non-Profit Organization Registration, S-Corp Election, Article of Amendment, Article of Organization, DBA Registration, Drafting Operating Agreement",
-  },
-  {
-    icon: "/icons/support.svg",
-    title: "24/7 Support",
-    description:
-      "We offer 24/7 support for all our clients. Call us for more information.",
+    title: "Business Formation Consulting: ",
+    description: "We help you choose the right structure for your business (LLC, S-Corp, C-Corp) and ensure you’re set up for success.",
   },
   {
     icon: "/icons/money.svg",
-    title: "Affordable Pricing",
-    description: "Affordable pricing for all our clients.",
+    title: "Financial Planning & Cash Flow Management",
+    description: "Strategic financial planning and cash flow management services to optimize profitability and financial health.",
   },
+  {
+    icon: "/icons/flexible.svg",
+    title: "Comprehensive Business Plans",
+    description: "We work with you to develop detailed business plans that attract investors and guide your business toward long-term growth.",
+  },
+
+  {
+    icon: "/icons/tax.svg",
+    title: "Risk Management:  ",
+    description: "Assess potential risks and ensure you’re prepared for unexpected financial challenges",
+  },
+  
 ];
 
 export function ShootingStarsAndStarsBackgroundDemo() {
   return (
     <div className="mt-20 py-10 md:py-20 rounded-[40px] bg-neutral-900 flex flex-col items-center justify-center relative w-full px-6 md:px-0">
       <h2 className="relative flex-col  z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white flex items-center gap-2 ">
-        Our guarantees to you.
+      Our Business Advisory Services Include:
         <p className="md:text-center   mx-auto  text-xl md:text-2xl text-gray-200">
-          We ensure the highest quality of work, with the fastest delivery
-          times.
+         
         </p>
       </h2>
 

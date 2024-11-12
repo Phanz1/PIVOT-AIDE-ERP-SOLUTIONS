@@ -32,10 +32,10 @@ export function BentoGridItem({
       {header}
       <div className="flex items-center mt-2">
         {icon}
-        <h3 className="ml-2 text-lg font-semibold">{title}</h3>
+        <h3 className="ml-2 text-xl font-semibold text-blue-500">{title}</h3>
       </div>
       <p
-        className={`mt-2 text-base transition-all ${
+        className={`mt-2 text-lg transition-all  ${
           isExpanded ? "max-h-full" : "max-h-16 overflow-hidden"
         }`}
       >

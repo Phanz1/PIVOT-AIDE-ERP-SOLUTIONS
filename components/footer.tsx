@@ -21,10 +21,10 @@ const Footer = () => {
           <div className="flex flex-col gap-y-4">
             <Link href="/">
               <Image
-                src="/logo/logo.png"
+                src="/logo/14.png"
                 width={160}
                 height={50}
-                alt="Pivot Aide Consultancy"
+                alt=" DMV Tax Pro"
                 className="w-40 object-contain"
               />
             </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
                 href="mailto:info@pivotaide.com"
                 className="text-gray-700 text-lg hover:underline"
               >
-                info@pivotaide.com
+                info@dmvtaxpro.com
               </a>
             </div>
             <div className="flex items-center gap-x-3">
@@ -73,47 +73,21 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Maryland, USA</h3>
               <p className="text-gray-600">
-                6475 New Hampshire Ave, Ste 350, MD 20783
+                6475 New Hampshire Ave, Ste 350, Maryland 20783
               </p>
             </div>
           </div>
 
-          {/* United Kingdom */}
-          <div className="flex items-start gap-x-3">
-            <FaMapMarkerAlt className="text-gray-600 text-2xl mt-1" />
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800">London, UK</h3>
-              <p className="text-gray-600">
-                First Floor Office, 3 Hornton Place, London, W8 4LZ
-              </p>
-            </div>
-          </div>
-
-          {/* Lagos, Nigeria */}
-          <div className="flex items-start gap-x-3">
-            <FaMapMarkerAlt className="text-gray-600 text-2xl mt-1" />
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800">Lagos, Nigeria</h3>
-              <p className="text-gray-600">
-                41 Oguntona Street, Gbagada, Lagos, Nigeria
-              </p>
-            </div>
-          </div>
+          
         </div>
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center border-t pt-6">
           <p className="text-gray-600 text-sm">
-            © 2024 Pivot Aide Consultancy. All Rights Reserved.
+          © 2024 DMV Tax Pro. All rights reserved.
           </p>
           <div className="flex items-center gap-x-6 mt-4 md:mt-0">
-          <Link href="/privacy" className="text-gray-600 hover:text-gray-800 text-sm transition-colors">
-  Privacy Policy
-</Link>
-
-            <Link href="/terms" className="text-gray-600 hover:text-gray-800 text-sm transition-colors">
-              Terms & Conditions
-            </Link>
+          
           </div>
         </div>
       </div>

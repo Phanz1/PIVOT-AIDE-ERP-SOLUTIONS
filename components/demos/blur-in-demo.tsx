@@ -15,9 +15,9 @@ const BlurInDemo: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
 
   return (
@@ -25,7 +25,7 @@ const BlurInDemo: React.FC = () => {
       <div>
       <BlurIn
         word="Unleashing Potential, Achieving Success"
-        className="text-4xl font-bold text-black dark:text-white"
+        className="text-4xl font-bold md:text-blue 500 dark:text-white"
       />
       <br/>
 
@@ -44,7 +44,7 @@ const BlurInDemo: React.FC = () => {
       <div className="flex flex-col md:flex-row items-start space-y-8 md:space-y-0 md:space-x-8 mt-8">
         {/* Text Section */}
         <div className="flex-1 space-y-4">
-          <h3 className="text-2xl font-bold text-black dark:text-white">
+          <h3 className="text-2xl font-bold text-blue-500 dark:text-white md:text-center">
             Our Approach
           </h3>
           <p className="text-2xl text-black dark:text-white">
@@ -54,8 +54,8 @@ const BlurInDemo: React.FC = () => {
 
         {/* Image Slider Section */}
         <div className="flex-1">
-          <CustomSlider images={images} settings={settings} />
-        </div>
+  <CustomSlider images={images} settings={settings} />
+</div>
       </div>
     </div>
   );

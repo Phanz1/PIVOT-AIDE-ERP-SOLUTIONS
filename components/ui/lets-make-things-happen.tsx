@@ -10,11 +10,11 @@ function LetsMakeThingsHappenSection() {
     bg-accent rounded-[45px] p-[50px] md:p-[60px] relative">
       <div className="md:pr-[22rem]">
         <p className="text-3xl font-medium">
-        Our Commitment
+        Ready to Take Your Business to the Next Level?
         </p>
 
         <p className="my-10 text-xl">
-        Discover the Pivot Aide Consulting difference. Contact us today to learn how we can help you achieve your business ambitions.
+         
         </p>
 
         <Link
@@ -35,12 +35,12 @@ function LetsMakeThingsHappenSection() {
        duration-200 
        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
         >
-          Join Us
+          Contact us
         </Link>
       </div>
       <div className="absolute -top-8 right-8 hidden md:block">
         <Image
-          src="/images/work.png"
+          src="/images/img1.jpeg"
           alt="proposal illustration"
           width={300}
           height={300}

@@ -5,8 +5,8 @@ import "./globals.css";
 const font = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pivot Aide Consulting",
-  description: "At Pivot Aide Consulting, we are dedicated to driving your business success through our comprehensive range of services. ",
+  title: "DMV Tax Pro",
+  description: "Expert Tax Guidance, Every Step of the Way",
 };
 
 export default function RootLayout({
